@@ -1,4 +1,4 @@
-package com.jcommerce.core.model;
+package org.jboss.spring.model;
 
 import java.io.Serializable;
 

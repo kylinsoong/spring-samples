@@ -6,8 +6,9 @@
         http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
         
    <persistence-unit name="org.springframework.samples.travel">
-      <jta-data-source>java:jboss/datasources/SpringTravelDS</jta-data-source>
-      <properties>
+   	<provider>org.hibernate.ejb.HibernatePersistence</provider>
+	<jta-data-source>java:jboss/datasources/SpringTravelDS</jta-data-source>
+	<properties>
       	 <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
       	 <property name="hibernate.hbm2ddl.auto" value="create-drop" />
          <property name="hibernate.show_sql" value="true"/>
